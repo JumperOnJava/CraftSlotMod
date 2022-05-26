@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
-  "version": "${version}",
+  "id": "craftslotabuse",
+  "version": "0.0.1",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Craft Slot Abuse",
+  "description": "Allows you use the craft slots in survival inventory as inventory slots.",
   "authors": [
-    "Me!"
+    "JavaJumper"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/JavaJump3r/CraftSlotAbuse",
+    "sources": "https://github.com/JavaJump3r/CraftSlotAbuse"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/modid/icon.png",
 
   "environment": "*",
@@ -27,7 +27,7 @@
   ],
 
   "depends": {
-    "fabricloader": ">=0.14.6",
+    "fabricloader": ">=0.13.0",
     "fabric": "*",
     "minecraft": "~1.18.2",
     "java": ">=17"
