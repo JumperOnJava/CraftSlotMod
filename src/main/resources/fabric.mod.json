@@ -18,8 +18,8 @@
 
   "environment": "*",
   "entrypoints": {
-    "main": [
-      "net.fabricmc.example.ExampleMod"
+    "client": [
+      "net.javajumper.craftslotabuse.CraftSlotAbuseInit"
     ]
   },
   "mixins": [
