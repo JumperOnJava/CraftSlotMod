@@ -18,7 +18,7 @@
 
   "environment": "*",
   "entrypoints": {
-    "client": [
+    "main": [
       "net.javajumper.craftslotabuse.CraftSlotAbuseInit"
     ]
   },
