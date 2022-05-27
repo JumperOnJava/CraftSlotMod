@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "craftslotabuse",
-  "version": "0.0.1",
+  "version": "0.0.2",
 
   "name": "Craft Slot Abuse",
   "description": "Allows you use the craft slots in survival inventory as inventory slots.",
