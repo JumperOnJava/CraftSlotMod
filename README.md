@@ -1,9 +1,5 @@
-# Fabric Example Mod
-
-## Setup
-
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+# CraftSlotAbuse
+Allows you use 4 crafting slots as inventory slots
+###WARNING: You can get banned on servers for using this
+This mod works by ignoring inventory close network packet so it equals to inventory move cheat, so some anticheats can detect it
+This mod can be used for hiding items from /invsee
