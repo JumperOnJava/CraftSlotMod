@@ -15,8 +15,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(ClientPlayNetworkHandler.class)
 public abstract class KillCloseWindowPacket {
-    @Inject(method = "sendPacket", at = @At("HEAD"))
-    public void sendPacket(Packet<?> pckt,CallbackInfo ci){
+    @Inject(method = "sendPacket", at = @At("HEAD"),cancellable = true)
+    private void killCloseWindowPacket(Packet<?> pckt,CallbackInfo ci){
         if(pckt instanceof CloseHandledScreenC2SPacket){
             //doing exception here, because we dont want to send packet to server and because i dont know how to do it in other way
             //int x = 0/0;
@@ -25,12 +25,22 @@ public abstract class KillCloseWindowPacket {
 
             //*few minutes later*
             //looks like
-            ci.cancel();
+            //ci.cancel();
             //should work
             //bruh it crashes again but now it tells me that method is not cancellable
 
-            CraftSlotAbuseInit.LOGGER.info("CloseHandledScreenC2SPacket (not) sent to server");
-            return;
+            //oh it works but in inject annotation should have cancellable
+
+            //bruh overwriting works better
+            //this works glitchy
+
+            //time to add window id check
+            if(((CloseHandledScreenC2SPacket) pckt).getSyncId() == 0)
+            {
+                CraftSlotAbuseInit.LOGGER.info("CloseHandledScreenC2SPacket (not) sent to server");
+                ci.cancel();
+            }
+
         }
     }
 }

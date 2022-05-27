@@ -10,6 +10,6 @@ public class CraftSlotAbuseInit implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		//we dont init anything, dont tell anyone
-		LOGGER.info("Hello JavaJumper!");
+		LOGGER.info("Craft slot abuse init!");
 	}
 }
