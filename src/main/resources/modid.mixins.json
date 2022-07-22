@@ -6,7 +6,7 @@
   "mixins": [
   ],
   "client": [
-    "KillCloseWindowPacket"
+    "KillSomePacketsMixin"
   ],
   "injectors": {
     "defaultRequire": 1
